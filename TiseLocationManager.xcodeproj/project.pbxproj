@@ -15,9 +15,11 @@
 		DC18EA2B26C120AA005839E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC18EA2926C120AA005839E2 /* LaunchScreen.storyboard */; };
 		DC18EA3626C120AA005839E2 /* TiseLocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA3526C120AA005839E2 /* TiseLocationManagerTests.swift */; };
 		DC18EA4126C120AA005839E2 /* TiseLocationManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA4026C120AA005839E2 /* TiseLocationManagerUITests.swift */; };
-		DC18EA4F26C1225C005839E2 /* TiseLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA4E26C1225C005839E2 /* TiseLocationManager.swift */; };
 		DC18EA5226C126B3005839E2 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA5126C126B3005839E2 /* Collection+Extension.swift */; };
 		DC18EA5426C12700005839E2 /* Locator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA5326C12700005839E2 /* Locator.swift */; };
+		DC18EA5E26C28450005839E2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA5D26C28450005839E2 /* LocationManager.swift */; };
+		DC18EA6026C28F5D005839E2 /* Locale+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA5F26C28F5D005839E2 /* Locale+Extension.swift */; };
+		DC18EA6226C28F76005839E2 /* CLPlaceMark+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC18EA6126C28F76005839E2 /* CLPlaceMark+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +54,11 @@
 		DC18EA3C26C120AA005839E2 /* TiseLocationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiseLocationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC18EA4026C120AA005839E2 /* TiseLocationManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiseLocationManagerUITests.swift; sourceTree = "<group>"; };
 		DC18EA4226C120AA005839E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC18EA4E26C1225C005839E2 /* TiseLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TiseLocationManager.swift; sourceTree = "<group>"; };
 		DC18EA5126C126B3005839E2 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DC18EA5326C12700005839E2 /* Locator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locator.swift; sourceTree = "<group>"; };
+		DC18EA5D26C28450005839E2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DC18EA5F26C28F5D005839E2 /* Locale+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Locale+Extension.swift"; sourceTree = "<group>"; };
+		DC18EA6126C28F76005839E2 /* CLPlaceMark+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLPlaceMark+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,8 +117,8 @@
 				DC18EA2726C120AA005839E2 /* Assets.xcassets */,
 				DC18EA2926C120AA005839E2 /* LaunchScreen.storyboard */,
 				DC18EA2C26C120AA005839E2 /* Info.plist */,
-				DC18EA4E26C1225C005839E2 /* TiseLocationManager.swift */,
 				DC18EA5326C12700005839E2 /* Locator.swift */,
+				DC18EA5D26C28450005839E2 /* LocationManager.swift */,
 			);
 			path = TiseLocationManager;
 			sourceTree = "<group>";
@@ -141,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				DC18EA5126C126B3005839E2 /* Collection+Extension.swift */,
+				DC18EA5F26C28F5D005839E2 /* Locale+Extension.swift */,
+				DC18EA6126C28F76005839E2 /* CLPlaceMark+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -276,9 +282,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC18EA2326C120A7005839E2 /* ViewController.swift in Sources */,
-				DC18EA4F26C1225C005839E2 /* TiseLocationManager.swift in Sources */,
 				DC18EA5426C12700005839E2 /* Locator.swift in Sources */,
+				DC18EA5E26C28450005839E2 /* LocationManager.swift in Sources */,
+				DC18EA6026C28F5D005839E2 /* Locale+Extension.swift in Sources */,
 				DC18EA1F26C120A7005839E2 /* AppDelegate.swift in Sources */,
+				DC18EA6226C28F76005839E2 /* CLPlaceMark+Extension.swift in Sources */,
 				DC18EA2126C120A7005839E2 /* SceneDelegate.swift in Sources */,
 				DC18EA5226C126B3005839E2 /* Collection+Extension.swift in Sources */,
 			);
@@ -386,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
